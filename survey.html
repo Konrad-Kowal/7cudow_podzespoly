@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Podzespoły komputerowe, specyfikacja komputera">
+  <meta name="author" content="Konrad Kowal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ankieta - 7 cudów podzespołów komputerowych</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="glowna.html">
+      <span class="logoIcon">🖥️</span>
+      <span class="logoText">7 cudów …</span>
+    </a>
+    <nav class="nav navDesktop">
+      <ul>
+        <li><a href="glowna.html">Strona główna</a></li>
+        <li><a href="survey.html">Ankieta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Ankieta użytkowników</h1>
+      <p class="lead">Podziel się swoją opinią o podzespołach komputerowych.</p>
+    </section>
+
+    <section class="survey">
+      <h2>Formularz ankiety</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>1. Najważniejszy podzespół</legend>
+          <label><input type="radio" name="fav" value="cpu"> Procesor (CPU)</label>
+          <label><input type="radio" name="fav" value="gpu"> Karta graficzna (GPU)</label>
+          <label><input type="radio" name="fav" value="ram"> Pamięć RAM</label>
+        </fieldset>
+
+        <label>2. Budżet (PLN)
+          <input type="number" name="budzet" min="0" step="50" placeholder="np. 2000">
+        </label>
+
+        <label>3. Główne zastosowanie
+          <select name="zastosowanie">
+            <option value="gaming">Gaming</option>
+            <option value="praca">Praca / Produkcja</option>
+            <option value="multimedia">Multimedia</option>
+            <option value="inne">Inne</option>
+          </select>
+        </label>
+
+        <fieldset>
+          <legend>4. Co planujesz wymienić? (wiele wyborów)</legend>
+          <label><input type="checkbox" name="wymiana" value="cpu"> CPU</label>
+          <label><input type="checkbox" name="wymiana" value="gpu"> GPU</label>
+          <label><input type="checkbox" name="wymiana" value="ram"> RAM</label>
+          <label><input type="checkbox" name="wymiana" value="dysk"> Dysk</label>
+        </fieldset>
+
+        <label>Uwagi
+          <textarea name="uwagi" rows="3" placeholder="Napisz uwagi na temat stronki..."></textarea>
+        </label>
+
+        <div class="formActions">
+          <button type="button" onclick="alert('Wysłano!')">Wyślij</button>
+          <button type="reset">Wyczyść</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Autor: <strong>Konrad Kowal</strong> | Klasa: <strong>2TA</strong></p>
+    <p><a href="glowna.html">Powrót na stronę główną</a></p>
+  </footer>
+
+</body>
+</html>

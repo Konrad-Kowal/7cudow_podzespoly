@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+  <meta name="keywords" content="Podzespoły komputerowe, specyfikacja komputera">
+  <meta name="author" content="Konrad Kowal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7 cudów podzespołów komputerowych</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand">
+      <a class="logo" href="#top" title="7 cudów podzespołów">
+        <span class="logoIcon">🖥️</span>
+        <span class="logoText">7 cudów</span>
+      </a>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <nav class="nav navDesktop">
+      <ul>
+        <li><a href="#cpu">Procesor</a></li>
+        <li><a href="#gpu">GPU</a></li>
+        <li><a href="#ram">RAM</a></li>
+        <li><a href="#dysk">Dysk</a></li>
+        <li><a href="#plyta">Płyta</a></li>
+        <li><a href="#zasilacz">Zasilacz</a></li>
+        <li><a href="#chlodzenie">Chłodzenie</a></li>
+      </ul>
+    </nav>
+
+    <!-- MENU TABLET -->
+    <nav class="nav navTablet">
+      <ul>
+        <li><a href="#cpu">CPU</a></li>
+        <li><a href="#gpu">GPU</a></li>
+        <li><a href="#ram">RAM</a></li>
+        <li><a href="#wiecej">Więcej</a></li>
+      </ul>
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <nav class="nav navMobile">
+      <details>
+        <summary class="hamburger">
+          <span></span><span></span><span></span>
+        </summary>
+        <ul class="mobileList">
+          <li><a href="#cpu">Procesor</a></li>
+          <li><a href="#gpu">GPU</a></li>
+          <li><a href="#ram">RAM</a></li>
+          <li><a href="#dysk">Dysk</a></li>
+          <li><a href="#plyta">Płyta</a></li>
+          <li><a href="#zasilacz">Zasilacz</a></li>
+          <li><a href="#chlodzenie">Chłodzenie</a></li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 id="top">Podzespoły komputerowe</h1>
+      <p class="lead">Przegląd najważniejszych komponentów: co robią, jak je dobierać i dlaczego są kluczowe.</p>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="galeria">
+      <h2>Galeria podzespołów</h2>
+      <div class="slideshow">
+        <img src="zdjecia/img1.jpg" alt="Procesor">
+        <img src="zdjecia/img2.jpg" alt="Karta graficzna">
+        <img src="zdjecia/img3.jpg" alt="Pamięć RAM">
+        <img src="zdjecia/img4.jpg" alt="Dysk SSD">
+        <img src="zdjecia/img5.jpg" alt="Płyta główna">
+        <img src="zdjecia/img6.jpg" alt="Zasilacz">
+      </div>
+    </section>
+
+    <section class="content">
+      <article id="cpu" class="card">
+        <h2>Procesor (CPU)</h2>
+        <p>Wykonuje instrukcje programów. Procesory dzielą sie na architekturę - ARM i x86. ARM jest wykorzystywana w urządzeniach mobilnych, NAS-ach oraz laptopach, gdyż są energooszczędne. x86 wykorzystywana jest w komputerach stacjonarnych oraz laptopach, gdzie liczy się wydajność. Głównie różnice między nimi są obsługiwane instrukcje - x86 często nie włączy programów napisanych dla ARM, ponieważ nie zrozumie ich. Drugim ważnym czynnikiem jest liczba rdzeni - im więcej tym w teorii lepiej, bo procesor wtedy może wykonywac kilka instrukcji naraz. Miarą bilionów operacji na sekunde jest Ghz - on determinuje szybkość wykonywania operacji przez rdzeń.</p>
+        <p><a href="https://www.mediaexpert.pl/komputery-i-tablety/podzespoly-komputerowe/procesory" target="_blank">Procesor - przykładowy sklep(otwiera się w nowej karcie)</a></p>
+      </article>
+
+      <article id="gpu" class="card">
+        <h2>Karta graficzna (GPU)</h2>
+        <p>jest to pewnego rodzaju procesora, który używa szybkiej pamięci - szybszej od ramu do przechowywania poleceń i informacji. Karta graficzna posiada rdzenie - jak procesor, tylko zamiast kilku - kilkunastu posiada ich tysiące, są jednak one wolniejsze niż te w procesorze dlatego lepiej przydają sie do obliczeń równoległych np. duże modele językowe czy generowanie klatek w Blenderze</p>
+        <p>Ważne czynniki które decydują o wydajności układu</p>
+        <ul>
+          <li>ilość rdzeni - CUDA lub strumieniowych</li>
+          <li>Wielkośc pamięci vram i jej przepustowość</li>
+          <li>Architektura</li>
+        </ul>
+      </article>
+
+      <article id="ram" class="card">
+        <h2>Pamięć operacyjna (RAM)</h2>
+        <p>Superszybka pamięć w komputerze, która odpowiada za przechowywanie zadań oraz rzeczy niezbędnych dla systemu bądź programu. Najczęściej jest jej mniej niż pamięci masowej, a dodatkowo jest nietrwała -  po odłączeniu zasilania jest czyszczona.</p>
+        <p>Głównne czynniki determinujące wydajność pamięci</p>
+        <ol>
+          <li>Typ (DDR4/DDR5/DDR3)</li>
+          <li>Pojemność - dla zadań biurowych wystarczy 8GB, dziś lepiej inwestować w 32GB</li>
+          <li>Częstotliwość i opóźnienia - są one zalezne i ściśle związane z generacją - DDR5 ma większe opóźnienie, ale wyższe częstotliwości </li>
+        </ol>
+        <p>Dodatkowo generacje ramu nie są ze sobą kompatybilne - mają wycięcie w innym miejscu co przedstawia grafika.</p>
+      </article>
+      <img id="imgram" src="zdjecia/img7.jpg" alt="Grafika przedstawiająca wyzębienie w poszczególnych generacjach ramu">
+      
+
+      <article id="dysk" class="card">
+        <h2>Dysk (SSD / HDD)</h2>
+        <p>Dysk inaczej pamięć masowa ma za zadanie przechowywanie systemu oraz aplikacji, danych i innych plików. W przeciwieństwie do RAMu dane nie są tracone przy odłączeniu zasilania. Wyróżnia się 3 typy dysków: HDD, SSD i M2. HDD są najwolniejsze i są najmniej odporne na upadki, ale za to sa tanie i opłacalne przy przechowywaniu dużej ilości danych, których nie potrzebujemy na co dzień. SSD sa szybsze, ale są droższe i odzyskanie danych jest trudniejsze od HDD. M2 natomiast są najszybsze, oferują wydajność rzędów 14000MB/s - gen5, ale są najdroższe.</p>
+        <p>Co wpływa na wydajność</p>
+        <ul>
+          <li>Prędkość - definiuje maksymalną prędkość przesyłu danych jednego pliku</li>
+          <li>Odczyt/zapis losowy -  od niego zależy responsywnośc systemu oraz jak szybko może znaleść losowy plik</li>
+          <li>Typ - HDD najwolniejsze - M2 najszybsze</li>
+        </ul>
+      </article>
+
+      <article id="plyta" class="card">
+        <h2>Płyta główna</h2>
+        <p>Kilkuwarstwowa płyta, której zadaniem jest umożliwienie komunikacji z komponentami w komputerze. To do płyty właśnie podłącza się praktycznie wszystko - od procesora po kontrolery RGB.</p>
+      </article>
+
+      <article id="zasilacz" class="card">
+        <h2>Zasilacz (PSU)</h2>
+        <p>Zasilacz przekształca prąd zmienny na stały, aby dostarczyć moc do podzespołów. Najważniejsze czynniki to certyfikat sprawności - jaką wydajność zasilacz ma pod różnym obciążeniem, moc - ile szczytowo generuje prądu oraz złącza.</p>
+      </article>
+
+      <article id="chlodzenie" class="card">
+        <h2>Chłodzenie</h2>
+        <p>Odpowiada za chłodzenie komponentów w komputerze. Spotyka się 3 rodzaje: pasywne - radiator, przydatny w podstawowych systemach gdzie chcemy ciszę podczas pracy, powietrzne - uzywa radiatora plus dodatkwo wentylatory w celu usprawnienia przepływu powietrza oraz wodne - używa ciekłej cieczy do chłodzenia, przez co z reguły najwydajniejsze jest.</p>
+      </article>
+
+      <!-- NIE MA W MOBILNYM -->
+      <aside class="aside" id="wiecej">
+        <h3>Porównanie - tabela</h3>
+        <table>
+          <thead>
+            <tr><th>Podzespół</th><th>Funkcja</th><th>Kluczowy parametr</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CPU</td><td>Obliczenia</td><td>Rdzenie / taktowanie</td></tr>
+            <tr><td>GPU</td><td>Grafika / obliczenia</td><td>VRAM</td></tr>
+            <tr><td>RAM</td><td>Pamięć operacyjna</td><td>Pojemność</td></tr>
+          </tbody>
+        </table>
+      </aside>
+    </section>
+
+ <!-- MULTIMEDIA -->
+    <section class="media">
+      <h2>Multimedia</h2>
+      <div class="mediaGrid">
+        <figure>
+          <figcaption>Prezentacja wideo</figcaption>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/glF78fUphoc?si=STag-ItH4yXDJCkj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="mapa">
+      <h2>Mapa - gdzie kupić części używane</h2>
+      <div class="mapWrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.4549013517667!2d21.00314821317357!3d52.2169526585042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccea00097f63%3A0x95fcb2643cf4401e!2sWarszawska%20Gie%C5%82da%20Elektroniczna!5e0!3m2!1spl!2spl!4v1765222262461!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Autor: <strong>Konrad Kowal</strong> | <strong>2TA</strong></p>
+    <p><a href="#top">Powrót na górę</a><br><a href="https://www.komputronik.pl/informacje/jaka-obudowa/?srsltid=AfmBOooDILTxLHWPqGGXu47hMu-gC-yvPgXMp9jetUk8nvLWxycvRMUR" target="_blank" rel="noopener">Jak wybrać obudowę komputerową</a></p>
+    <a href="survey.html">Ankieta</a>
+  </footer>
+
+</body>
+</html>
